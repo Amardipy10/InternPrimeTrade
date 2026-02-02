@@ -66,8 +66,15 @@ NODE_ENV=development
 
 Start MongoDB (if local):
 ```bash
+# Using Docker
+docker run -d -p 27017:27017 --name mongodb mongo:latest
 
 # Or start your local MongoDB service
+```
+
+Seed demo data (optional):
+```bash
+npm run seed
 ```
 
 Start the backend:
@@ -149,6 +156,13 @@ Frontend runs on: `http://localhost:5173`
 └── README.md
 ```
 
+## 🚀 Scaling for Production
+
+### Deployment Strategy
+1. **Frontend**: Deploy to Vercel/Netlify with environment variables
+2. **Backend**: Deploy to Railway/Render/AWS with PM2 cluster mode
+3. **Database**: Use MongoDB Atlas with connection pooling
+
 ### Performance Optimizations
 1. **Database Indexing**: Add indexes on frequently queried fields
    - `tasks.user` + `tasks.status` compound index
@@ -190,6 +204,24 @@ Dashboard showing task statistics and quick access cards:
 User profile with bio, member information, and edit capabilities:
 
 ![Profile Page](./screenshots/profile_page.png)
+
+---
+
+## 🧪 Verification Results
+
+| Test | Status |
+|------|--------|
+| Backend starts successfully | ✅ Pass |
+| MongoDB connection | ✅ Pass |
+| Frontend builds & runs | ✅ Pass |
+| User signup | ✅ Pass |
+| User login | ✅ Pass |
+| Protected route redirect | ✅ Pass |
+| Dashboard loads | ✅ Pass |
+| Profile view/edit | ✅ Pass |
+| Task CRUD | ✅ Pass |
+| Search & filter | ✅ Pass |
+| Logout | ✅ Pass |
 
 ---
 
