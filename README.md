@@ -2,7 +2,7 @@
 
 A full-stack web application featuring user authentication, profile management, and task CRUD with a modern, responsive UI.
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -11,7 +11,7 @@ A full-stack web application featuring user authentication, profile management, 
 | **Database** | MongoDB with Mongoose ODM |
 | **Styling** | TailwindCSS with custom animations |
 
-## 📋 Features
+##  Features
 
 ### Authentication
 - ✅ User signup with validation
@@ -35,7 +35,7 @@ A full-stack web application featuring user authentication, profile management, 
 - ✅ Protected API routes
 - ✅ Error handling
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Node.js 18+
@@ -94,7 +94,7 @@ npm run dev
 
 Frontend runs on: `http://localhost:5173`
 
-## 🔐 Demo Credentials
+##  Demo Credentials
 
 | Email | Password |
 |-------|----------|
@@ -103,7 +103,7 @@ Frontend runs on: `http://localhost:5173`
 
 *Run `npm run seed` in the backend folder to create these accounts.*
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Authentication
 | Method | Endpoint | Description |
@@ -126,7 +126,7 @@ Frontend runs on: `http://localhost:5173`
 | PUT | `/api/v1/tasks/:id` | Update task |
 | DELETE | `/api/v1/tasks/:id` | Delete task |
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── backend/
@@ -156,13 +156,6 @@ Frontend runs on: `http://localhost:5173`
 └── README.md
 ```
 
-## 🚀 Scaling for Production
-
-### Deployment Strategy
-1. **Frontend**: Deploy to Vercel/Netlify with environment variables
-2. **Backend**: Deploy to Railway/Render/AWS with PM2 cluster mode
-3. **Database**: Use MongoDB Atlas with connection pooling
-
 ### Performance Optimizations
 1. **Database Indexing**: Add indexes on frequently queried fields
    - `tasks.user` + `tasks.status` compound index
@@ -182,13 +175,13 @@ Frontend runs on: `http://localhost:5173`
 2. **Logging**: Integrate with Datadog/CloudWatch for monitoring
 3. **CI/CD**: GitHub Actions for automated testing and deployment
 
-## 📝 API Testing
+##  API Testing
 
 Import the `postman_collection.json` file into Postman to test all endpoints.
 
 ---
 
-## 📸 Application Walkthrough
+##  Application Walkthrough
 
 ### Login Page
 Modern login page with form validation and demo credentials:
@@ -207,24 +200,7 @@ User profile with bio, member information, and edit capabilities:
 
 ---
 
-## 🧪 Verification Results
 
-| Test | Status |
-|------|--------|
-| Backend starts successfully | ✅ Pass |
-| MongoDB connection | ✅ Pass |
-| Frontend builds & runs | ✅ Pass |
-| User signup | ✅ Pass |
-| User login | ✅ Pass |
-| Protected route redirect | ✅ Pass |
-| Dashboard loads | ✅ Pass |
-| Profile view/edit | ✅ Pass |
-| Task CRUD | ✅ Pass |
-| Search & filter | ✅ Pass |
-| Logout | ✅ Pass |
-
----
-
-## 👨‍💻 Author
+##  Author
 
 Built for PrimeTrade Frontend Developer Intern Assessment
