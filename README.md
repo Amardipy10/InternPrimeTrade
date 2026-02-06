@@ -166,7 +166,6 @@ Frontend runs on: `http://localhost:5173`
 
 ### Security Enhancements
 1. **CORS**: Configure strict CORS policies for production domains
-2. **Helmet**: Add helmet.js for security headers
 3. **Refresh Tokens**: Implement refresh token rotation
 4. **Environment**: Use separate configs for dev/staging/prod
 
